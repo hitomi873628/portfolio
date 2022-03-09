@@ -125,7 +125,6 @@ header {
     background-color:white;
     color:#494d52;
     width:100%;
-    max-width: 1170px;
     padding:60px 80px 100px 60px; 
     
 }
@@ -307,7 +306,6 @@ footer {
     color:white;
     height:130px;
     width:100%;
-    max-width: 1170px;
 
 }
 
