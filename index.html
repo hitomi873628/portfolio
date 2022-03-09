@@ -1,0 +1,169 @@
+<!DOCUTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="view port" content="width=device-width,initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    
+
+</head>
+<body>
+<header>
+    <div class="header-logo">
+        <p>my portfolio</p>
+    </div>
+    <span class="fa fa-bars menu-icon"></span>
+    <div class="header-list">
+        <ul>
+            <li>
+                <a href="#top-container">TOP</a>
+            </li>
+            <li>
+                <a href="#skills">SKILL</a>
+            </li>
+            <li>
+                <a href="#faq">FAQ</a>
+            </li>
+            <li>
+                <a href="#contact-form">CONTACT</a>
+            </li>
+            <li id="login-show" class="login">login</li>
+        </ul>
+    </div>
+</header>
+<div id="login-modal" class="login-modal-wrapper">
+    <div class="modal">
+        <div class="close-modal">
+            <i class="fa fa-3x fa-times"></i>
+        </div>
+    
+        <div id="login-form">
+            <h2>Emailログイン</h2>
+            <form action="#">
+                <input class="form-control" type="text" placeholder="mailaddress">
+                <input class="form-control" type="password" placeholder="password">
+                <div id="submit-btn">ログイン</div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div id="main" class ="main">
+    <div id="top-container" class="top-container">
+        <h2 id="welcome-message">Welcome to my website.</h2>
+        <p id="aboutme-message">
+        コーダー・プログラマーのhitomiです。<br>
+        お客様の事業繁栄のお手伝いをさせていただきたいと考えています。<br>
+        お気軽にご相談ください。</p>
+    </div>
+    <div id="aboutme-container" class ="aboutme-container">
+        <div id="skills" class ="skills">
+            <h3>SKILL</h3>
+            <p>HTML・CSS…レスポンシブ対応 （PC・タブレット・スマートフォン対応)</p>
+            <p>javascript…jQuery</p>
+            <p>PHP</p>
+            <p>その他…必要に応じて習得できるよう努力してまいります。</p>
+            <ul class="flex-list">
+                <li class="skill  skill-hover">
+                    <div class="skill-icon">
+                        <img src="C:\Users\81806\Desktop\my portfolio\top.png" >
+                        <p>html・CSS</p>
+                    </div>
+                    <p class="text-contents">
+                        お客様の事業繁栄につながるメッセージの発信を目的に、ご意向に沿いながら作っていきたいと考えております。
+                    </p>
+                </li>
+                <li class="skill skill-hover">
+                    <div class="skill-icon">
+                        <img src="C:\Users\81806\Desktop\my portfolio\top.png">
+                        <p>jQuery</p>
+                    </div>
+                    <p class="text-contents">
+                        どう伝えるか、jQueryを使用し、どのように伝えられるかを、ご意向に沿いながら作っていきたいと考えております。
+                    </p>
+
+                </li>
+                <li class="skill skill-hover">
+                    <div class="skill-icon">
+                        <img src="C:\Users\81806\Desktop\my portfolio\top.png">
+                        <p>PHP</p>
+                    </div>
+                    <p class="text-contents">
+                        目的に応じて、ご意向に沿うものを適宜対応させていただきます。
+                    </p>
+                </li>
+                <li class="skill skill-hover">
+                    <div class="skill-icon">
+                        <img src="C:\Users\81806\Desktop\my portfolio\top.png">
+                        <p>wordpress</p>
+                    </div>
+                    <p class="text-contents">
+                        目的に応じて、ご意向に沿うものを適宜対応させていただきます。
+                    </p>
+                </li>
+            </ul>
+
+            </div>
+        <div id="faq" class="faq">
+            <h3>FAQ</h3>
+            <ul id="faq-list">
+                <li class="faq-list-item">
+                  <h1 class="question">なぜプログラマーを志望したのか？</h1>
+                  <span>+</span>
+                  <div class="answer">
+                    <p>きっかけは高校生のときに出会ったこと。すごくたのしかったから。2022年2月より独学で勉強を始める。</p>
+                  </div>
+                </li>
+                <li class="faq-list-item">
+                  <h1 class="question">結構大変だけどその辺は大丈夫？</h1>
+                  <span>+</span>
+                  <div class="answer">
+                    <p>苦戦したとしても楽しいと感じること、割と粘り強く、今後の糧と思える。</p>
+                  </div>
+                </li>
+                <li class="faq-list-item">
+                  <h1 class="question">3年後どうなりたい？</h1>
+                  <span>+</span>
+                  <div class="answer">
+                    <p>任せてください！と自信を持って、貢献できるレベルに。</p>
+                  </div>
+                </li>
+                <li class="faq-list-item">
+                    <h1 class="question">プログラミングって言語多いけどどう思う？</h1>
+                    <span>+</span>
+                    <div class="answer">
+                      <p>基本を鍛えながら、必要に応じて積極的に取り入れていきたい。</p>
+                    </div>
+                  </li>
+              </ul>
+        </div>
+        <div id="contact-form" class="contact-form">
+           <h3>Contact</h3>
+           <p>メールアドレス（必須）</p>
+           <input>
+           <p>お問い合わせ内容（必須）</p>
+           <textarea></textarea><br>
+           <input id="hide-text" class ="contact-submit" type="submit" value="送信">
+           <p id="text">送信ボタンを押すとこちらの説明文は消えます。</p>
+        </div>
+     </div>
+
+</div>
+<footer>
+    <div class="footer-logo">my portfolio</div>
+    <div class="footer-list">
+        <ul>
+            <li>profile</li>
+            <li>skills</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
