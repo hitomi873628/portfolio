@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+li {
+    list-style:none;
+}
+
+
+header {
+    background-color:rgba(233, 197, 156, 0.8);
+    color:white;
+    display:block;
+    position:fixed;
+    top:0px;
+    z-index: 10;
+    width:100%;
+    height:90px;
+}
+
+.header-logo {
+    font-family: "Sawarabi Mincho",'Merriweather', sans-serif;
+    float:left;
+    font-size:36px;
+    font-weight:bold;
+    letter-spacing:3px;
+    padding:20px 60px;
+}
+
+.menu-icon {
+    padding:30px 0px;
+    font-size:30px;
+    display:none;
+}
+
+.header-list {
+    float:right;
+}
+
+
+.header-list li {
+    float:left;
+    padding:33px 20px;
+}
+
+.header-list li:hover {
+    color:rgba(248, 64, 8, 0.6);
+    transition:1s;
+}
+
+.login-modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display:none;
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #f8edf8;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .fa-times {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: rgba(88, 81, 88, 0.46);
+    cursor: pointer;
+  }
+  
+  #signup-form, #login-form {
+    width: 100%;
+  }
+  
+  #signup-form h2, #login-form h2 {
+    color: #7e6f80;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  #signup-form input, #login-form input {
+    width: 340px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 14px 14px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: #8068a7;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+    
+
+
+.main {
+    background-color:white;
+    color:#494d52;
+    width:100%;
+    padding:60px 80px 100px 60px; 
+    
+}
+
+.main h3 {
+    border-bottom:2px solid #C0C0C0;
+    margin-top:200px;
+}
+.top-container {
+    height:100px;
+    padding-top:150px;
+}
+
+.top-container h2 {
+    color:#898360;
+    font-size:38px;
+    letter-spacing: 3px;
+    text-align: center;
+    display: none;
+}
+
+
+.top-container p {
+    color:#898360;
+    font-size:15px; 
+    letter-spacing: 3px;
+    text-align: center;
+    display: none;
+}
+
+.aboutme-container {
+    height:1600px;
+}
+
+
+.aboutme-container p {
+    margin-top:10px;
+}
+
+.flex-list {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.skills {
+    height:600px;
+    padding-top:10px;
+}
+
+
+.skill {
+    float:left;
+    width:25%;
+    margin-top:10px;
+}
+
+.skill-icon {
+    position:relative;
+}
+
+.skill-icon img {
+    height:200px;
+    width:150px;
+}
+
+
+.skill-icon p {
+    letter-spacing: 3;
+    font-weight: bold;
+    opacity: 0.7;
+    position:absolute;
+    top:160px;
+    left:10px;
+}
+
+.skills p {
+    clear:left;
+}
+
+.text-contents {
+    display:inline-block;
+    width:60%;
+    font-size: 12px;
+    display:none;
+}
+
+.text-active {
+    display:block;
+}
+
+.faq {
+    height:300px;
+    padding-top:10px;
+}
+
+.faq-list-item {
+    margin:10px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+    cursor:pointer;
+    text-align: left;
+  }
+  
+  .faq-list-item h1 {
+    font-size: 14px;
+  }
+  
+  .faq-list-item span {
+    position:absolute;
+    top:0;
+    right:5px;
+    color:#ccc;
+    font-size:13px;
+  }
+  
+  .answer {
+    font-size: 12px;
+    padding: 5px 0px;
+    margin-bottom: 15px;
+    display:none;
+    
+  }
+  
+
+
+
+
+.contact-form {
+    height:300px;
+    padding-top:10px;
+}
+
+
+
+input {
+    border:1px solid #C0C0C0;
+    color:#737164;
+    font-size:18px;
+    width:400px;
+    margin-top:0;
+    margin-bottom:20px;
+    cursor:text;
+}
+
+textarea {
+    border:1px solid #C0C0C0;
+    font-size:18px;
+    height:100px;
+    width:400px;
+    margin-bottom:20px;
+    cursor:text;
+}
+
+.contact-submit {
+    font-size:15px;
+    padding:3px 0px;
+    background-color:#99CCFF;
+    color:#737164e;
+    box-shadow: 0 7px #3399FF;
+    border-radius:5px ;
+    opacity:0.6;
+    cursor:pointer;
+}
+
+
+.contact-submit:active {
+    opacity:1;
+    box-shadow:none;
+    position:relative;
+    top:7px;
+}
+
+footer {
+    background-color:#737164;
+    color:white;
+    height:130px;
+    width:100%;
+}
+
+.footer-logo {
+    float:left;
+    font-size:30px;
+    padding:20px 80px;
+}
+
+.footer-list {
+    float:right;
+    font-size:16px;
+    padding:20px 20px;
+}
+
+.footer-list li {
+    margin-bottom:10px;
+}
+
