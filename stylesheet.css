@@ -25,6 +25,8 @@ header {
     top:0px;
     z-index: 10;
     width:100%;
+    max-width: 1170px;
+
     height:90px;
 }
 
@@ -125,6 +127,7 @@ header {
     background-color:white;
     color:#494d52;
     width:100%;
+    max-width: 1170px;
     padding:60px 80px 100px 60px; 
     
 }
@@ -169,9 +172,12 @@ header {
     flex-wrap:wrap;
 }
 
+.flex-list li {
+    display:auto;
+}
+
 
 .skills {
-    height:600px;
     padding-top:10px;
 }
 
@@ -180,6 +186,9 @@ header {
     float:left;
     width:25%;
     margin-top:10px;
+    padding-left:15px;
+    padding-right:15px;
+  
 }
 
 .skill-icon {
@@ -188,7 +197,6 @@ header {
 
 .skill-icon img {
     height:200px;
-    width:150px;
 }
 
 
@@ -214,6 +222,10 @@ header {
 
 .text-active {
     display:block;
+}
+
+.clear {
+    clear:left;
 }
 
 .faq {
@@ -303,6 +315,8 @@ footer {
     color:white;
     height:130px;
     width:100%;
+    max-width: 1170px;
+
 }
 
 .footer-logo {
