@@ -1,3 +1,27 @@
+@media(max-width:1000px){
+    .flex-list {
+        display: flex;
+        flex-wrap:wrap;
+        
+      }
+      .flex-list li {
+        flex: auto;
+        width:50%;
+      }    
+
+    .top-container h1 {
+        font-size:32px;
+      }
+      
+    .top-container p {
+        font-size:20px;
+      }
+    
+}
+
+
+
+
 @media (max-width: 670px){
     .menu-icon{
         display:block;
@@ -6,4 +30,38 @@
     .header-list {
         display:none;
     }
+    
+    .top-container {
+        text-align:left;
+        padding-top:130px;
+    }
+
+    .top-container h1 {
+        font-size:24px;
+      }
+      
+    .top-container p {
+        font-size:14px;
+      }
+    
+    
+
+    .flex-list {
+        flex-direction:column;
+      }
+      
+    .flex-list li {
+        margin:0 auto;
+      }
+    
+
+
+
+
+    footer {
+        text-align:center;
+    }
+
+    
+
 }
