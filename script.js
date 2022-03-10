@@ -7,6 +7,10 @@ $(function(){
     $('.close-modal').click(function(){
       $('#login-modal').fadeOut();
     });
+
+    $('#header-top').click(function(){
+      $('html,body').scrollTop(0);
+    });
     
 
 
