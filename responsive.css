@@ -1,4 +1,6 @@
 @media(max-width:1000px){
+
+
     .flex-list {
         display: flex;
         flex-wrap:wrap;
@@ -30,6 +32,10 @@
     .header-list {
         display:none;
     }
+
+    .header-list li{
+        display:none;
+    }
     
     .top-container {
         text-align:left;
@@ -54,9 +60,22 @@
         margin:0 auto;
       }
     
-
-
-
+    .skill-icon img {
+        height:400px;
+        border:7px solid rgb(177, 177, 221);
+    }
+    
+    .text-contents {
+        display:inline-block;
+        width:60%;
+        font-size: 24px;
+        display:none;
+    }
+    
+    .faq {
+        font-size:24px;
+    }
+    
 
     footer {
         text-align:center;
