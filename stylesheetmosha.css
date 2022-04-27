@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+}
+
+/*CSSのリセット*/
+html,body,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,p,div{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN W3',sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*コンテナ*/
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*ヘッダー*/
+
+
+header {
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-logo {
+    width: 160px;
+    padding-top: 15px;
+}
+
+.header-right ul {
+    display: flex;
+}
+
+.header-right ul li::after {
+    content: "｜";
+    padding-left: 10px; /*liのwidthと調整*/
+    color: block;
+}
+
+.header-right ul li:last-child::after {
+    content:"";/*最後のli要素左バー消す*/
+}
+
+.header-right li a {
+    line-height: 65px;
+    color: black;
+    padding: 0 25px;
+    display: inline-block;
+    transition: all 1s;
+}
+
+.header-right li :hover {
+    background-color: rgb(139, 87, 42, 0.5);
+}
+
+/*トップ*/
+
+
+.top-wrapper {
+    background-image: url(house.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:420px;
+    color: white;
+}
+
+.top-wrapper h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    color: white;
+    opacity: 0.6;
+    margin-top: 260px;
+
+}
+
+/*４つの家*/
+
+
+.house-wrapper {
+    background-color:rgba(199, 134, 183, 0.5);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+    background-color: aqua;
+}
+
+.section-title {
+    font-weight: normal;
+    text-align: center;
+}
+
+.house-items {
+    display: flex;
+}
+
+.house {
+    width: 25%;
+}
+
+.house-icon img {
+    width: 160px;
+}
+
+.txt-contents {
+    width: 90%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/*お知らせ*/
+
+.news-wrapper {
+    background-color:rgba(199, 134, 183, 0.5);
+    padding: 10px 0;
+
+}
+
+.news-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.news-list li {
+    border-bottom: 1px solid #000;
+    padding: 30px 0;
+}
+
+.news-list li a {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+.news-list-border {
+    border: 1px solid #000 ;
+    padding: 5px 8px;
+    margin: 0 30px;
+    font-size: 11px;
+}
+
+/*施工事例*/
+.case-wrapper {
+    padding: 10px 0;
+
+}
+
+.case-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case-content {
+    text-align: center;
+    flex: auto;
+    width: 50%;
+}
+
+.case-content img {
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.case-content_title {
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.case-content_text {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.case-content_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom:  1px solid #000;
+    width: 300px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.case-btn {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.case-btn a {
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 12px 40px;
+    color: #000;
+    font-size: 20px;
+}
+
+/*リンク*/
+
+.links {
+    display: flex;
+    max-width: 1170px;
+    padding-top: 90px;
+}
+
+.link{
+    flex: auto;
+    transition: all 1s;
+    vertical-align: bottom;
+}
+
+.link:hover {
+    opacity: 0.3;
+}
+
+
+.link img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+/*フッター*/
+footer {
+    background-color: rgba(56, 208, 144, 0.667);
+    color: white;
+    padding-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.footer-right a {
+    color: white;
+}
+
+.footer-right li {
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+
+
+footer .btn {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    margin-right: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.btn-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer .btn:hover {
+    opacity: 0.3;
+}
+
+.facebook {
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.twitter {
+    padding: 5px 10px;
+}
+
+.instagram {
+    padding: 5px 12px;
+}
+
+.copyright {
+    text-align: center;
+}
+
