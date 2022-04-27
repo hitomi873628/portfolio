@@ -46,7 +46,7 @@ header {
 }
 
 .header-logo {
-    width: 240px;
+    width: 160px;
     padding-top: 15px;
 }
 
@@ -255,7 +255,6 @@ footer {
     background-color: rgba(56, 208, 144, 0.667);
     color: white;
     padding-top: 30px;
-    padding-bottom: 60px;
 }
 
 .footer-container {
